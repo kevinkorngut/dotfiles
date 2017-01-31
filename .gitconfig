@@ -29,9 +29,6 @@
 	branches = branch -a
 	remotes = remote -v
 
-	# List aliases
-	aliases = config --get-regexp alias
-
 	# Amend the currently staged files to the latest commit
 	amend = commit --amend --reuse-message=HEAD
 
@@ -103,10 +100,6 @@
 	# http://michael-kuehnel.de/git/2014/11/21/git-mac-osx-and-german-umlaute.html
 	precomposeunicode = false
 
-	# Speed up commands involving untracked files such as `git status`.
-	# https://git-scm.com/docs/git-update-index#_untracked_cache
-	untrackedCache = true
-
 [color]
 
 	# Use colors in Git commands that are capable of colored output when
@@ -157,12 +150,17 @@
 	# Include summaries of merged commits in newly created merge commit messages
 	log = true
 
-[push]
+	# use diff3 format
+	conflictstyle = diff3
 
-	# https://git-scm.com/docs/git-config#git-config-pushdefault
+[push]
 	default = simple
+
 	# Make `git push` push relevant annotated tags when pushing branches out.
 	followTags = true
+
+[diff "exif"]
+	textconv = exiftool
 
 # URL shorthands
 
