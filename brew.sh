@@ -67,6 +67,7 @@ brew install woff2
 
 # Install other useful binaries.
 brew install ack
+brew install autoenv
 brew install exiv2
 brew install exiftool
 brew install git
