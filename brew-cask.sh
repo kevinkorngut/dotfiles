@@ -28,10 +28,12 @@ apps=(
     alfred
     dropbox
     google-chrome
+    google-chrome-canary
     google-drive
     intellij-idea
     firefox
     kaleidoscope
+    opera
     slack
 )
 
