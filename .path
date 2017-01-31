@@ -1,0 +1,2 @@
+#ensure /usr/local/bin comes before the rest
+export PATH="/usr/local/bin:$PATH"
