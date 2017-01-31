@@ -1,3 +1,9 @@
 # Automatically normalize line endings for all text-based files
 #* text=auto
 # Disabled because of https://github.com/mathiasbynens/dotfiles/issues/149 :(
+*.swc -crlf -diff
+*.ane -crlf -diff
+*.swf -crlf -diff
+*.otf -crlf -diff
+*.ttf -crlf -diff
+*.png diff=exif
