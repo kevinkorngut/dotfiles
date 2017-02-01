@@ -83,18 +83,30 @@ brew install yarn
 brew install webkit2png
 brew install zopfli
 
-#Pages
-mas install 409201541
-#Numbers
-mas install 409203825
-#Marked 2
-mas install 890031187
+#1Password
+mas install 443987910
 #DaisyDisk
 mas install 411643860
+#Marked 2
+mas install 890031187
+#Numbers
+mas install 409203825
+#Pages
+mas install 409201541
 #Postico (postgres GUI)
 mas install 1031280567
 #Fantastical 2
 mas install 975937182
+#Final Cut X
+mas install 424389933
+#The Unarchiver
+mas install 425424353
+#Tweetbot
+mas install 557168941
+#Twitter
+mas install 409789998
+#Xcode
+mas install 497799835
 
 # Remove outdated versions from the cellar.
 brew cleanup
