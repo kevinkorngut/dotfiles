@@ -28,3 +28,6 @@ export LESS_TERMCAP_md="${yellow}";
 
 # Don’t clear the screen after quitting a manual page.
 export MANPAGER='less -X';
+
+# Ensure git is using MacOS' version of ssh
+export GIT_SSH="/usr/bin/ssh"
