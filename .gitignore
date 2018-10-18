@@ -7,9 +7,12 @@
 ###########
 bower_components
 node_modules
+.env
+.envrc
 .nodemonignore
 .sass-cache
 .bower-*/
+build/
 
 # Compiled source #
 ###################
