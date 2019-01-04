@@ -24,16 +24,18 @@ brew tap caskroom/versions
 
 # Install packages
 apps=(
-    atom
     alfred
+    docker
     dropbox
     google-chrome
     google-chrome-canary
-    google-drive
-    intellij-idea
+    google-backup-and-sync
     firefox
+    intellij-idea
     kaleidoscope
     opera
+    sublime-text
+    visual-studio-code
     slack
 )
 

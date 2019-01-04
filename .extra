@@ -1,0 +1,27 @@
+# Git credentials
+# Not in the repository, to prevent people from accidentally committing under my name
+# SET GIT_AUTHOR_EMAIL && GIT_AUTHOR_NAME
+
+
+# should probably not be in .extra permanently either
+GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
+git config --global user.name "$GIT_AUTHOR_NAME"
+GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
+git config --global user.email "$GIT_AUTHOR_EMAIL"
+
+# initial install stuff (needs to not be in .extra permanently)
+brew install tmux neovim
+install https://github.com/robbyrussell/oh-my-zsh
+curl -sfLo "$HOME/.local/share/nvim/site/autoload/plug.vim" --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+mkdir -p "$HOME/.config/nvim"
+nvim +PlugInstall +qa || echo "Something went wrong installing Neovim plugins. Check init.vim for errors and try again."
+git clone https://github.com/tmux-plugins/tpm "$HOME/.tmux/plugins/tpm
+
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-history-substring-search.git ~/.zsh/plugins/zsh-history-substring-search
+git clone https://github.com/zsh-users/zsh-completions.git ~/.zsh/plugins/zsh-completions
+
+git clone https://github.com/denysdovhan/spaceship-prompt.git ~/.oh-my-zsh/themes/spaceship-prompt
+ln -s "$HOME/.oh-my-zsh/themes/spaceship-prompt/spaceship.zsh-theme" "$HOME/.oh-my-zsh/themes/spaceship.zsh-theme"
